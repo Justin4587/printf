@@ -1,0 +1,12 @@
+.TH printf 1 "20 July 2020" "version 1.0"
+.SH NAME
+ _printf
+.SH SYNOPSIS
+_printf(format[argument])
+.SH DESCRIPTION
+_Printf is a tool used to send data to the standard output using various format
+specifiers.
+.SH RETURN VALUE
+Return (0)
+.SH EXAMPLE
+_printf("Character:[%c]\n", 'H');
