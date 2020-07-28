@@ -40,9 +40,16 @@ va_start(argpnt, format);
      	  }
 	else
 	  {
-	f = get_func(format[i]);
-	total = total + f(argpnt);
+	f = get_func(format[i]);	
+	if(f == NULL)
+	  {
+	    _putchar('%');
+	    _putchar(c);
+	    break;
+	   	  }
+	   total = total + f(argpnt);
 	  }
+
       }
    total++;
     i++;
