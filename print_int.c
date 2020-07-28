@@ -11,6 +11,11 @@ int print_int(va_list argpnt)
 {
   int count = 0;
   int  i = va_arg(argpnt, int);
+  if (i == 0)
+    {
+      _putchar('0');
+      return(1);
+    }
 
   if (i < 0)
     {
