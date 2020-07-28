@@ -28,6 +28,7 @@ va_start(argpnt, format);
       {
 	c = format[i];
 	_putchar(c);
+	total++;
       }
     else
       {
@@ -45,9 +46,11 @@ va_start(argpnt, format);
 	  {
 	    _putchar('%');
 	    _putchar(c);
+	    total++;
 	    if(c != '\0')
 	      {
 		i++;
+		total++;
 	      }
 	    continue;
 	   	  }
@@ -55,10 +58,10 @@ va_start(argpnt, format);
 	  }
 
       }
-   total++;
-    i++;
+       i++;
   }
   va_end (argpnt);
-  total--;
+  printf("return %d\n", total);
+
 return(total);
 }

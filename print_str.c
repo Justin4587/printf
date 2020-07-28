@@ -18,7 +18,6 @@ int print_str(va_list argpnt)
     _putchar(str[sl]);
     sl++;
     }
-  sl--;
   return(sl);
 }
 
