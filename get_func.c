@@ -25,7 +25,7 @@ int (*get_func(char c))(va_list)
 	  {'i', print_int},
 		 
 	  /**
-	  *	{"b", print_binary},
+	   *  {"r", rev_string}
 		 *	{"u", print_unsignd},
 		 *	{"o", print_octal},
 		 *	{"x", print_hex},

@@ -45,7 +45,11 @@ va_start(argpnt, format);
 	  {
 	    _putchar('%');
 	    _putchar(c);
-	    break;
+	    if(c != '\0')
+	      {
+		i++;
+	      }
+	    continue;
 	   	  }
 	   total = total + f(argpnt);
 	  }

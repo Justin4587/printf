@@ -15,11 +15,25 @@ int print_int(va_list argpnt)
   if (i < 0)
     {
       i = -i;
-      putchar('-');
+      _putchar('-');
       count++;
     }
 
-  _putchar(i%10 +'0');
-  count++;
+  count = count + int_rec(i);
   return (count);
 }
+
+    int int_rec(int num)
+{
+  int digit;
+  int len;
+
+  if(num == 0)
+	     {
+	       return (0);
+	     }
+  digit = num % 10;
+  len = 1 + int_rec(num / 10);
+  _putchar(digit + '0');
+    return (len);
+ }
