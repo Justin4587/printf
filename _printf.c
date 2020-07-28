@@ -61,7 +61,6 @@ va_start(argpnt, format);
        i++;
   }
   va_end (argpnt);
-  printf("return %d\n", total);
 
 return(total);
 }
