@@ -34,12 +34,13 @@ int (*get_func(char c))(va_list)
 		{'\0', NULL}
 };
 
-	while (name[i].c)
+	while (name[i].c != '\0')
 	  {
 	    if (name[i].c == c)
 	      return (name[i].f);
 	    i++;
 	  }
 
-	return (0);
+
+	return (name[i].f);
 }
