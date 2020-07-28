@@ -10,7 +10,7 @@
 int print_int(va_list argpnt)
 {
   int count = 0;
-  int  i = va_arg(argpnt, int);
+  long int i = va_arg(argpnt, int);
   if (i == 0)
     {
       _putchar('0');
@@ -28,10 +28,10 @@ int print_int(va_list argpnt)
   return (count);
 }
 
-    int int_rec(int num)
+    int int_rec(long int num)
 {
-  int digit;
-  int len;
+ long int digit;
+ int len;
 
   if(num == 0)
 	     {

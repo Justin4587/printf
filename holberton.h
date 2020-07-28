@@ -15,7 +15,7 @@ int print_str(va_list);
 int _putchar(char c);
 int _strlen(char *s);
 int print_int(va_list);
-int int_rec(int num);
+int int_rec(long int num);
 
 
 typedef struct spec
